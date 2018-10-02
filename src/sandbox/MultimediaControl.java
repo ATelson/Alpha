@@ -3,16 +3,16 @@ package sandbox;
 public interface MultimediaControl {
 
   // the definition of a method used...
-  public void play();
+   void play();
 
   // the definition of a method used...
-  public void stop();
+   void stop();
 
   // the definition of a method used...
-  public void previous();
+   void previous();
 
   // the definition of a method used...
-  public void next();
+   void next();
 
 
 }

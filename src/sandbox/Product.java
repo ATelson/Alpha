@@ -1,7 +1,7 @@
 package sandbox;
 
-import java.util.Date;
 import java.lang.String;
+import java.util.Date;
 
 //Abstract class that is implemented by the Item Interface
 abstract class Product implements Item {
@@ -18,9 +18,9 @@ abstract class Product implements Item {
   private java.util.Date date = new java.util.Date();
 
   /**
-   * @param productionNumber for passed production number
+   * mutator method used to set production number to current production number.
+   * @param productionNumber for passed production number.
    * @return int
-   *  mutator method used to set production number to current production number
    */
   public Item setProductionNumber(int productionNumber) {
     currentProductionNumber = productionNumber;
@@ -28,9 +28,9 @@ abstract class Product implements Item {
   }
 
   /**
-   * @param deviceName for passed device name
+   *  mutator method used to set product name to current device name.
+   * @param deviceName for passed device name.
    * @return String
-   *  mutator method used to set product name to current device name
    */
   public Product setProductName(String deviceName) {
     productName = deviceName;
@@ -38,33 +38,33 @@ abstract class Product implements Item {
   }
 
   /**
-   *  accessor method used to return the product name
+   *  accessor method used to return the product name.
    */
   public Product getProductName() {
     return this;
   }
 
   /**
-   *  accessor method used to return manufacturer
+   *  accessor method used to return manufacturer.
    */
   public Product getManufacturer() {
     return this;
   }
 
   /**
-   *  accessor method used to return serialNumber
+   *  accessor method used to return serialNumber.
    */
   public Product getSerialNumber() {
     return this;
   }
 
   /**
-   * @param deviceName for product name
    *  constructor
    *  used to take in the name of the product and set to the field variable name.
    *  Assign a serial number from the currentProductionNumber.
    *  Incremented the currentProductionNumber in readiness for the next instance.
    *  Set manufacturedOn as the current date and time.
+   * @param deviceName for product name.
    */
   public Product(String deviceName) {
 
@@ -79,7 +79,7 @@ abstract class Product implements Item {
    * manufacturer
    * serialNumber
    * manufacturedOn
-   * productName
+   * productName.
    */
   public String toString() {
 
