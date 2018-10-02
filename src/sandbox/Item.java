@@ -1,3 +1,12 @@
+/***************************************************************************************************
+ * Author: Allen Telson
+ * File: Interface Item.java
+ * Date: 10/01/2018
+ * Description: Interface Item is used as a template for the abstract class Product.
+ * It contains a necessary field and some methods (accessors and mutators) that will be
+ * used as a template for Product class.
+ **************************************************************************************************/
+
 package sandbox;
 
 public interface Item {

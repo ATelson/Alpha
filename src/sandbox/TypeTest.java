@@ -1,4 +1,13 @@
+/***************************************************************************************************
+ * Author: Allen Telson
+ * File: class TypeTest.java
+ * Date: 10/01/2018
+ * Description: TypeTest file is currently being used to just test the enum ItemType.
+ * It first instantiates an object from ItemType and labels it type and tests each element
+ * within the enum. Each element of the enum has a respective data type description.
+ **************************************************************************************************/
 package sandbox;
+
 
 public class TypeTest {
 

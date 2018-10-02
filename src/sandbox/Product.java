@@ -1,3 +1,15 @@
+/***************************************************************************************************
+ * Author: Allen Telson
+ * File: Abstract class Product.java
+ * Date: 10/01/2018
+ * Description: This is an abstract class that is implements an interface called Item.
+ * It's general purpose is to provide fields and methods that will be used when creating
+ * products that have unique name, manufacture date, and serial number. They are all manufactured
+ * by Oracle Production. It also contains accessor and mutator methods along with a constructor and
+ * a toString() method to print all fields of a product.
+ **************************************************************************************************/
+
+
 package sandbox;
 
 import java.lang.String;
