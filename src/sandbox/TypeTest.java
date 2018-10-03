@@ -18,8 +18,8 @@ public class TypeTest {
   }
 
   /**
-   * void type method used to test enum ItemType in a switch statement.
-   * Each element has a case which prints data type.
+   * void type method used to test enum ItemType in a switch statement. Each element has a case
+   * which prints data type.
    */
   public void displayItemTypes() {
     switch (type) {

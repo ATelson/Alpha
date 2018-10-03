@@ -31,6 +31,7 @@ abstract class Product implements Item {
 
   /**
    * mutator method used to set production number to current production number.
+   *
    * @param productionNumber for passed production number.
    * @return int
    */
@@ -40,7 +41,8 @@ abstract class Product implements Item {
   }
 
   /**
-   *  mutator method used to set product name to current device name.
+   * mutator method used to set product name to current device name.
+   *
    * @param deviceName for passed device name.
    * @return String
    */
@@ -50,32 +52,31 @@ abstract class Product implements Item {
   }
 
   /**
-   *  accessor method used to return the product name.
+   * accessor method used to return the product name.
    */
   public Product getProductName() {
     return this;
   }
 
   /**
-   *  accessor method used to return manufacturer.
+   * accessor method used to return manufacturer.
    */
   public Product getManufacturer() {
     return this;
   }
 
   /**
-   *  accessor method used to return serialNumber.
+   * accessor method used to return serialNumber.
    */
   public Product getSerialNumber() {
     return this;
   }
 
   /**
-   *  constructor
-   *  used to take in the name of the product and set to the field variable name.
-   *  Assign a serial number from the currentProductionNumber.
-   *  Incremented the currentProductionNumber in readiness for the next instance.
-   *  Set manufacturedOn as the current date and time.
+   * constructor used to take in the name of the product and set to the field variable name. Assign
+   * a serial number from the currentProductionNumber. Incremented the currentProductionNumber in
+   * readiness for the next instance. Set manufacturedOn as the current date and time.
+   *
    * @param deviceName for product name.
    */
   public Product(String deviceName) {
@@ -87,11 +88,8 @@ abstract class Product implements Item {
   }
 
   /**
-   * toString method used to return a print statement with the following:
-   * manufacturer
-   * serialNumber
-   * manufacturedOn
-   * productName.
+   * toString method used to return a print statement with the following: manufacturer serialNumber
+   * manufacturedOn productName.
    */
   public String toString() {
 
