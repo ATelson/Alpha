@@ -27,6 +27,7 @@ abstract class Product implements Item {
 
 
   // Time and date variable that will be used for the manufacturing date
+  //  using java.util.Date found in Oracles document data base online
   private java.util.Date date = new java.util.Date();
 
   /**
