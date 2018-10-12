@@ -1,6 +1,7 @@
 # Alpha
 
 Version: 1.0.1
+
 Author: Allen Telson
 
 Program Description:  This program is designed to imitate a production line for multimedia devices
