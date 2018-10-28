@@ -23,7 +23,7 @@ abstract class Product implements Item {
   private String manufacturer = MANUFACTURER;
   private Date manufacturedOn;
   private String productName;
-  private int currentProductionNumber = 1; //used to store the next number to be assigned to serial#
+  public static int currentProductionNumber = 1; //used to store the next number to be assigned to serial#
 
 
   // Time and date variable that will be used for the manufacturing date
@@ -34,43 +34,44 @@ abstract class Product implements Item {
    * mutator method used to set production number to current production number.
    *
    * @param productionNumber for passed production number.
-   * @return int
    */
-  public Item setProductionNumber(int productionNumber) {
-    currentProductionNumber = productionNumber;
-    return this;
+  @Override
+  public void setProductionNumber(int productionNumber) {
+    this.serialNumber = productionNumber;
   }
 
   /**
    * mutator method used to set product name to current device name.
    *
    * @param deviceName for passed device name.
-   * @return String
    */
-  public Product setProductName(String deviceName) {
-    productName = deviceName;
-    return this;
+  @Override
+  public void setProductName(String deviceName) {
+    this.productName = deviceName;
   }
 
   /**
    * accessor method used to return the product name.
    */
-  public Product getProductName() {
-    return this;
+  @Override
+  public String getProductName() {
+    return this.productName;
   }
 
   /**
    * accessor method used to return manufacturer.
    */
-  public Product getManufacturer() {
-    return this;
+  @Override
+  public String getManufacturer() {
+    return this.manufacturer;
   }
 
   /**
    * accessor method used to return serialNumber.
    */
-  public Product getSerialNumber() {
-    return this;
+  @Override
+  public Integer getSerialNumber() {
+    return this.serialNumber;
   }
 
   /**
@@ -82,10 +83,10 @@ abstract class Product implements Item {
    */
   public Product(String deviceName) {
 
-    productName = deviceName;
-    serialNumber = currentProductionNumber;
+    setProductName(deviceName);
+    setProductionNumber(currentProductionNumber);
     currentProductionNumber++;
-    manufacturedOn = date;
+    this.manufacturedOn = this.date;
   }
 
   /**
@@ -94,10 +95,10 @@ abstract class Product implements Item {
    */
   public String toString() {
 
-    return "Manufacturer  : " + manufacturer + "\n"
-        + "Serial Number : " + serialNumber + "\n"
-        + "Date          : " + manufacturedOn + "\n"
-        + "Name          : " + productName;
+    return "Manufacturer  : " + getManufacturer() + "\n"
+        + "Serial Number : " + getSerialNumber() + "\n"
+        + "Date          : " + this.manufacturedOn + "\n"
+        + "Name          : " + getProductName();
   }
 
 }

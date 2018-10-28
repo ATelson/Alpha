@@ -15,19 +15,19 @@ public interface Item {
   String MANUFACTURER = "Oracle Production";
 
   // the definition of a public setProductionNumber method that returns an integer
-  Item setProductionNumber(int productionNumber);
+  void setProductionNumber(int productionNumber);
 
   // the definition of a public setName method that accept a string named deviceName
-  Item setProductName(String deviceName);
+  void setProductName(String deviceName);
 
   // the definition of a public getName method that returns a String
-  Item getProductName();
+  String getProductName();
 
   // the definition of a public getManufacturer method that returns a String
-  Item getManufacturer();
+  String getManufacturer();
 
   // the definition of a public getSerialNumber method that returns an integer
-  Item getSerialNumber();
+  Integer getSerialNumber();
 
 
 }

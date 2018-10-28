@@ -9,5 +9,10 @@
 package sandbox;
 
 public enum ItemType {
-  AU, VI, AM, VM
+AU ("AUDIO") , VI ("VISUAL") , AM ("AUDIOMOBILE") , VM ("VISUALMOBILE");
+
+public final String code;
+  ItemType(String code) {
+    this.code = code;
+  }
 }
