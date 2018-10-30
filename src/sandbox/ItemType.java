@@ -9,7 +9,7 @@
 package sandbox;
 
 public enum ItemType {
-AU ("AUDIO") , VI ("VISUAL") , AM ("AUDIOMOBILE") , VM ("VISUALMOBILE");
+AUDIO ("AU") , VISUAL ("VI") , AUDIO_MOBILE ("AM") , VISUAL_MOBILE ("VM");
 
 public final String code;
   ItemType(String code) {

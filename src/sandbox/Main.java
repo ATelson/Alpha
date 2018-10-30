@@ -11,16 +11,19 @@ package sandbox;
 import static sandbox.ItemType.*;
 import static sandbox.MonitorType.*;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+
 public class Main {
 
   public static void main(String[] args) {
 
-    AudioPlayer myPlayer = new AudioPlayer("iPod", "MP3 Player", AU);
-    System.out.println(myPlayer);
-
-    Screen myScreen = new Screen("60", 0, 0);
-
-    MoviePlayer dvdPlayer = new MoviePlayer("DVD Player" , LCD, myScreen);
-    System.out.println("\n" + dvdPlayer);
+    ArrayList<Product> myList = new ArrayList<>();
+    myList.add(new Product("ISP"));
+    myList.add(new Product("PS5"));
+    myList.add(new Product("PS6"));
+    myList.add(new AudioPlayer("iPod", "MP3", AUDIO));
+    System.out.println(myList);
   }
 }

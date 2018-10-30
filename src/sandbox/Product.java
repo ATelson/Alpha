@@ -13,10 +13,11 @@
 package sandbox;
 
 import java.lang.String;
+import java.util.Comparator;
 import java.util.Date;
 
 //Abstract class that is implemented by the Item Interface
-abstract class Product implements Item {
+class Product implements Item, Comparator<Product> {
 
 
   private int serialNumber;
@@ -101,4 +102,8 @@ abstract class Product implements Item {
         + "Name          : " + getProductName();
   }
 
+  @Override
+  public int compare(Product first, Product second) {
+    return first.productName.compareTo(second.productName);
+  }
 }

@@ -12,7 +12,7 @@ package sandbox;
 public interface Item {
 
   // A public constant string named MANUFACTURER that is set to "Oracle Production"
-  String MANUFACTURER = "Oracle Production";
+  String MANUFACTURER = "OracleProduction";
 
   // the definition of a public setProductionNumber method that returns an integer
   void setProductionNumber(int productionNumber);
