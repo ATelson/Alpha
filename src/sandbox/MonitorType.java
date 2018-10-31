@@ -1,7 +1,7 @@
 package sandbox;
 
 public enum MonitorType {
-  LCD ("LCD"), LED ("LED");
+  LCD("LCD"), LED("LED");
 
   public String code;
 

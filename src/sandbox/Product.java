@@ -11,7 +11,8 @@ class Product implements Item, Comparable<Product> {
   private String manufacturer = MANUFACTURER;
   private Date manufacturedOn;
   private String productName;
-  private static int currentProductionNumber = 1; //used to store the next number to be assigned to serial#
+  //store the next number to be assigned to serial#
+  private static int currentProductionNumber = 1;
 
 
   // Time and date variable that will be used for the manufacturing date

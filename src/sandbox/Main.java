@@ -1,12 +1,15 @@
 package sandbox;
 
-
 import java.util.ArrayList;
+
 import java.util.Collections;
 
 
 public class Main {
 
+  /**
+   *   test the functionality of the program.
+   */
   public static void main(String[] args) {
 
     // Write one line of code to create an ArrayList of products
@@ -15,7 +18,7 @@ public class Main {
     // Write one line of code to call testCollection and assign the result to the ArrayList
     productArrayList = testCollection();
 
-// Write one line of code to sort the ArrayList
+    // Write one line of code to sort the ArrayList
     Collections.sort(productArrayList);
 
     // Call the print method on the ArrayList

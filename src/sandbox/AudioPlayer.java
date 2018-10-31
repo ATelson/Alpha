@@ -13,13 +13,13 @@ public class AudioPlayer extends Product implements MultimediaControl {
    *
    * @param deviceName for product name.
    */
-   AudioPlayer(String deviceName, String audioSpecification, ItemType mediaType) {
+  AudioPlayer(String deviceName, String audioSpecification, ItemType mediaType) {
     super(deviceName);
     this.audioSpecification = audioSpecification;
     this.mediaType = mediaType;
   }
 
-   AudioPlayer(String deviceName, String audioSpecification) {
+  AudioPlayer(String deviceName, String audioSpecification) {
     super(deviceName);
     this.audioSpecification = audioSpecification;
   }
@@ -50,6 +50,7 @@ public class AudioPlayer extends Product implements MultimediaControl {
 
   @Override
   public String toString() {
-    return super.toString() + "\n" + "Audio Spec: " + this.audioSpecification + "\n" + "Type: " + this.mediaType;
+    return super.toString() + "\n" + "Audio Spec: " + this.audioSpecification + "\n" + "Type: "
+        + this.mediaType;
   }
 }
