@@ -2,8 +2,8 @@ package sandbox;
 
 public class MoviePlayer extends Product implements MultimediaControl {
 
-  public MonitorType monitorType;
-  public Screen screen;
+  private MonitorType monitorType;
+  private Screen screen;
 
   /**
    * constructor used to take in the name of the product and set to the field variable name. Assign
@@ -12,7 +12,7 @@ public class MoviePlayer extends Product implements MultimediaControl {
    *
    * @param deviceName for product name.
    */
-  public MoviePlayer(String deviceName, MonitorType monitorType, Screen screen) {
+  MoviePlayer(String deviceName, Screen screen, MonitorType monitorType) {
     super(deviceName);
     this.monitorType = monitorType;
     this.screen = screen;
@@ -40,7 +40,7 @@ public class MoviePlayer extends Product implements MultimediaControl {
 
   @Override
   public String toString() {
-    return super.toString() + "\n" + "Monitor Type : " + this.monitorType + "\n" + "Screen : " + "\n"
-        + this.screen;
+    return super.toString() + "\n" + "Screen : " + this.screen + "\n" + "Monitor Type : "
+        + this.monitorType;
   }
 }

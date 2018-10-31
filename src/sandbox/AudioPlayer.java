@@ -3,8 +3,8 @@ package sandbox;
 public class AudioPlayer extends Product implements MultimediaControl {
 
 
-  String audioSpecification;
-  ItemType mediaType;
+  private String audioSpecification;
+  private ItemType mediaType = ItemType.AUDIO;
 
   /**
    * constructor used to take in the name of the product and set to the field variable name. Assign
@@ -13,10 +13,15 @@ public class AudioPlayer extends Product implements MultimediaControl {
    *
    * @param deviceName for product name.
    */
-  public AudioPlayer(String deviceName, String audioSpecification, ItemType mediaType) {
+   AudioPlayer(String deviceName, String audioSpecification, ItemType mediaType) {
     super(deviceName);
     this.audioSpecification = audioSpecification;
     this.mediaType = mediaType;
+  }
+
+   AudioPlayer(String deviceName, String audioSpecification) {
+    super(deviceName);
+    this.audioSpecification = audioSpecification;
   }
 
   @Override
@@ -45,6 +50,6 @@ public class AudioPlayer extends Product implements MultimediaControl {
 
   @Override
   public String toString() {
-    return super.toString() + "\n" + this.audioSpecification + "\n" + this.mediaType;
+    return super.toString() + "\n" + "Audio Spec: " + this.audioSpecification + "\n" + "Type: " + this.mediaType;
   }
 }

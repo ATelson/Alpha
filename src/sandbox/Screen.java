@@ -2,18 +2,11 @@ package sandbox;
 
 public class Screen implements ScreenSpec {
 
-  public String resolution;
-  public int refreshRate;
-  public int responseTime;
+  private String resolution;
+  private int refreshRate;
+  private int responseTime;
 
-
-  //Screen(){
-    //this.resolution = "Generic";
-    //this.refreshRate = 0;
-    //this.responseTime = 0;
- // }
-
-  Screen(String resolution, int refreshRate, int responseTime){
+  Screen(String resolution, int refreshRate, int responseTime) {
     this.resolution = resolution;
     this.refreshRate = refreshRate;
     this.responseTime = responseTime;

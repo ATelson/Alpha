@@ -1,30 +1,17 @@
-/***************************************************************************************************
- * Author: Allen Telson
- * File: Abstract class Product.java
- * Date: 10/01/2018
- * Description: This is an abstract class that is implements an interface called Item.
- * It's general purpose is to provide fields and methods that will be used when creating
- * products that have unique name, manufacture date, and serial number. They are all manufactured
- * by Oracle Production. It also contains accessor and mutator methods along with a constructor and
- * a toString() method to print all fields of a product.
- **************************************************************************************************/
-
-
 package sandbox;
 
 import java.lang.String;
-import java.util.Comparator;
 import java.util.Date;
 
 //Abstract class that is implemented by the Item Interface
-class Product implements Item, Comparator<Product> {
+class Product implements Item, Comparable<Product> {
 
 
   private int serialNumber;
   private String manufacturer = MANUFACTURER;
   private Date manufacturedOn;
   private String productName;
-  public static int currentProductionNumber = 1; //used to store the next number to be assigned to serial#
+  private static int currentProductionNumber = 1; //used to store the next number to be assigned to serial#
 
 
   // Time and date variable that will be used for the manufacturing date
@@ -96,14 +83,16 @@ class Product implements Item, Comparator<Product> {
    */
   public String toString() {
 
-    return "Manufacturer  : " + getManufacturer() + "\n"
+    return "Manufacturer : " + getManufacturer() + "\n"
         + "Serial Number : " + getSerialNumber() + "\n"
-        + "Date          : " + this.manufacturedOn + "\n"
-        + "Name          : " + getProductName();
+        + "Date : " + this.manufacturedOn + "\n"
+        + "Name : " + getProductName();
   }
 
+
   @Override
-  public int compare(Product first, Product second) {
-    return first.productName.compareTo(second.productName);
+  public int compareTo(Product o) {
+    return productName.compareTo(o.productName);
+
   }
 }
