@@ -1,5 +1,6 @@
 package sandbox;
 
+//ItemType enum is used to distinguish items from each other by their functionality
 public enum ItemType {
   AUDIO("AU"), VISUAL("VI"), AUDIO_MOBILE("AM"), VISUAL_MOBILE("VM");
 

@@ -1,10 +1,12 @@
 package sandbox;
 
 import java.lang.String;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.InputMismatchException;
 
 //Abstract class that is implemented by the Item Interface
-class Product implements Item, Comparable<Product> {
+public class Product implements Item, Comparable<Product> {
 
 
   private int serialNumber;
@@ -94,6 +96,48 @@ class Product implements Item, Comparable<Product> {
   @Override
   public int compareTo(Product o) {
     return productName.compareTo(o.productName);
+  }
+
+  static void printType(ArrayList<Product> productList, ItemType itemType) {
+    System.out.println("Test Print Type");
+    boolean done = false;
+
+    try {
+
+      while (!done) {
+
+        switch (itemType) {
+
+          case AUDIO:
+            for (Product type : productList
+            ) {
+              if (type instanceof AudioPlayer) {
+                System.out.println(type);
+              }
+            }
+            done = true;
+            break;
+
+          case VISUAL:
+            for (Product type : productList
+            ) {
+              if (type instanceof MoviePlayer) {
+                System.out.println(type);
+              }
+            }
+            done = true;
+            break;
+
+          default:
+            System.out.println("Can only search Audio players and movie players, try again!");
+            break;
+        }
+      }
+    } catch (InputMismatchException ex) {
+      System.out.println(
+          "Invalid input.");
+    }
 
   }
 }
+

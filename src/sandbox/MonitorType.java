@@ -1,5 +1,6 @@
 package sandbox;
 
+//Enum used to distinguish between different types of monitors
 public enum MonitorType {
   LCD("LCD"), LED("LED");
 

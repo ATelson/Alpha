@@ -9,6 +9,10 @@
 
 package sandbox;
 
+/**
+ * The Item interface is used to create different types of items that will be considered products,
+ * AudioPlayer and MoviePLayer classes that are all implemented from this interface.
+ */
 public interface Item {
 
   // A public constant string named MANUFACTURER that is set to "Oracle Production"

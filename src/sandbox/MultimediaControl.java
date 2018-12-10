@@ -9,25 +9,28 @@
 
 package sandbox;
 
+/**
+ * Interface used to provide functionality to all devices that have multimedia control buttons.
+ */
 public interface MultimediaControl {
 
   /**
-   * the definition of a method used...
+   * the definition of a method used provide the play functionality for a multimedia device.
    */
   void play();
 
   /**
-   * the definition of a method used...
+   * the definition of a method used provide the stop functionality for a multimedia device.
    */
   void stop();
 
   /**
-   * the definition of a method used...
+   * the definition of a method used provide the previous functionality for a multimedia device.
    */
   void previous();
 
   /**
-   * the definition of a method used...
+   * the definition of a method used provide the next functionality for a multimedia device.
    */
   void next();
 
